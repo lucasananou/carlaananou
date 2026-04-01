@@ -1272,10 +1272,6 @@
             };
 
          window.addEventListener('load', () => {
-            const glowCards = document.querySelectorAll('.experience-card');
-            glowCards.forEach(card => {
-                scrollGlowObserver.observe(card);
-            });
             
             // Handle form submission via Vercel endpoint
             const contactForm = document.getElementById('contact-form');
