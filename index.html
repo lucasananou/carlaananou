@@ -76,8 +76,8 @@
         }
     </style>
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        // Force dark mode by default if no preference is set
+        if (localStorage.getItem('color-theme') === 'dark' || !('color-theme' in localStorage)) {
             document.documentElement.classList.add('dark');
         } else {
             document.documentElement.classList.remove('dark')
@@ -561,10 +561,10 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social" data-featured="true">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-lulou-1">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Lulou Agence de communication/Les signes qu’un compte manque de direction copie/Les signes qu’un compte manque de direction.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Les signes qu’un compte manque de direction copie/8.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Les signes qu’un compte manque de direction copie/9.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Les signes qu’un compte manque de direction copie/10.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/signes-manque-direction/signes-manque-direction.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/signes-manque-direction/8.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/signes-manque-direction/9.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/signes-manque-direction/10.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-lulou-1', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -585,10 +585,10 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social" data-featured="true">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-vert-2">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/transformation arbuste copie/Transformation d’un arbuste.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/transformation arbuste copie/IMG_0326.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/transformation arbuste copie/IMG_0327.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/transformation arbuste copie/IMG_0328.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/transformation-arbuste/transformation-arbuste.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/transformation-arbuste/IMG_0326.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/transformation-arbuste/IMG_0327.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/transformation-arbuste/IMG_0328.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-vert-2', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -609,11 +609,11 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social" data-featured="true">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-vert-1">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/Taille de formation arbuste copie/Taille de formation arbustes _ haies (objectif densité).png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/Taille de formation arbuste copie/9.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/Taille de formation arbuste copie/10.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/Taille de formation arbuste copie/11.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Juste Vert Paysagiste/Taille de formation arbuste copie/12.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/taille-formation-arbuste/taille-formation-arbustes.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/taille-formation-arbuste/9.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/taille-formation-arbuste/10.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/taille-formation-arbuste/11.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/juste-vert-paysagiste/taille-formation-arbuste/12.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-vert-1', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -634,10 +634,10 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-lulou-2">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Lulou Agence de communication/Pourquoi ce n’est pas juste poster copie/Pourquoi ce n’est pas juste poster.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Pourquoi ce n’est pas juste poster copie/22.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Pourquoi ce n’est pas juste poster copie/23.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Lulou Agence de communication/Pourquoi ce n’est pas juste poster copie/24.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/pourquoi-pas-juste-poster/pourquoi-pas-juste-poster.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/pourquoi-pas-juste-poster/22.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/pourquoi-pas-juste-poster/23.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/lulou-agence-comm/pourquoi-pas-juste-poster/24.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-lulou-2', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -658,7 +658,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="Interview/interview lcab/elisa.mov" type="video/mp4">
+                            <source src="interview/interview lcab/elisa.mov" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -676,7 +676,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="Interview/interview lcab/imad.mov" type="video/mp4">
+                            <source src="interview/interview lcab/imad.mov" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -694,7 +694,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="Interview/interview lcab/jp.mov" type="video/mp4">
+                            <source src="interview/interview lcab/jp.mov" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -712,7 +712,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="vidéos Yoobi site internet/637333329d0b4094a529da04daeda810.MOV" type="video/mp4">
+                            <source src="videos-yoobi/video_1.mov" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -730,7 +730,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="vidéos Yoobi site internet/7ba8134b0f85410b8e46a4bf76b1cf69.MOV" type="video/mp4">
+                            <source src="videos-yoobi/video_2.mov" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -748,7 +748,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="vidéos Yoobi site internet/Augmentez la Confiance des Visiteurs sur Votre Site.MP4" type="video/mp4">
+                            <source src="videos-yoobi/video_3.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -765,7 +765,7 @@
                 <!-- PRINT : AFFICHE 1 -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="aspect-[3/4] overflow-hidden relative">
-                        <img src="Print/affiches/Flyer LCAB.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="print/affiches/Flyer-LCAB.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8">
                         <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Affiche</span>
@@ -776,7 +776,7 @@
                 <!-- PRINT : AFFICHE 2 (Featured) -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="aspect-[3/4] overflow-hidden relative">
-                        <img src="Print/affiches/1.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="print/affiches/1.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8">
                         <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Affiche</span>
@@ -787,7 +787,7 @@
                 <!-- PRINT : AFFICHE 3 -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="aspect-[3/4] overflow-hidden relative">
-                        <img src="Print/affiches/4.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <img src="print/affiches/4.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
                     <div class="p-8">
                         <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Affiche</span>
@@ -798,7 +798,7 @@
                 <!-- PRINT : FLYER PSYCHO (No crop) -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="aspect-[3/4] overflow-hidden relative bg-zinc-50 dark:bg-zinc-950">
-                        <img src="Print/flyer/Flyer coach psycho.png" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700">
+                        <img src="print/flyer/Flyer coach psycho.png" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700">
                     </div>
                     <div class="p-8">
                         <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Flyer</span>
@@ -810,8 +810,8 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="relative carousel-container group/carousel aspect-video overflow-hidden bg-zinc-50 dark:bg-zinc-950" id="carousel-cdv-artisan">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="Print/carte de visite/artisan/6.png" class="shrink-0 w-full h-full object-contain p-4">
-                            <img src="Print/carte de visite/artisan/7.png" class="shrink-0 w-full h-full object-contain p-4">
+                            <img src="print/carte de visite/artisan/6.png" class="shrink-0 w-full h-full object-contain p-4">
+                            <img src="print/carte de visite/artisan/7.png" class="shrink-0 w-full h-full object-contain p-4">
                         </div>
                         <button onclick="moveCarousel('carousel-cdv-artisan', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -831,8 +831,8 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
                     <div class="relative carousel-container group/carousel aspect-video overflow-hidden bg-zinc-50 dark:bg-zinc-950" id="carousel-cdv-psycho">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="Print/carte de visite/cpach psycoemotionnel/4.png" class="shrink-0 w-full h-full object-contain p-4">
-                            <img src="Print/carte de visite/cpach psycoemotionnel/5.png" class="shrink-0 w-full h-full object-contain p-4">
+                            <img src="print/carte de visite/cpach psycoemotionnel/4.png" class="shrink-0 w-full h-full object-contain p-4">
+                            <img src="print/carte de visite/cpach psycoemotionnel/5.png" class="shrink-0 w-full h-full object-contain p-4">
                         </div>
                         <button onclick="moveCarousel('carousel-cdv-psycho', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -852,10 +852,10 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="event" data-featured="true">
                     <div class="relative carousel-container group/carousel aspect-video overflow-hidden" id="carousel-noel">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="évènement Noël Club d'affaires/RDCBNTG4566oo_17.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="évènement Noël Club d'affaires/RDCBNTG4566_4.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="évènement Noël Club d'affaires/RDCBNTG4566_41.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="évènement Noël Club d'affaires/RDCBNTG4566_59.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="event-noel-assets/RDCBNTG4566oo_17.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="event-noel-assets/RDCBNTG4566_4.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="event-noel-assets/RDCBNTG4566_41.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="event-noel-assets/RDCBNTG4566_59.jpg" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-noel', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -880,11 +880,11 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-psycho-1">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux copie/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux copie/34.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux copie/35.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux copie/36.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/Pourquoi comprendre son mal-être ne suffit pas toujours à aller mieux copie/37.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/pourquoi-maletre/pourquoi-maletre.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/pourquoi-maletre/34.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/pourquoi-maletre/35.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/pourquoi-maletre/36.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/pourquoi-maletre/37.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-psycho-1', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -905,8 +905,8 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-psycho-2">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/pour mieux vivre avec le stress copie/pour mieux vivre avec le stress.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
-                            <img src="carrousels instagram/Coach Psycho émotionnel/pour mieux vivre avec le stress copie/FEUILLE DE ROUTE — GESTION DU STRESS.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/vivre-avec-le-stress/mieux-vivre-stress.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="carrousels-instagram/coach-psycho-emotionnel/vivre-avec-le-stress/feuille-de-route-stress.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
                         </div>
                         <button onclick="moveCarousel('carousel-psycho-2', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -927,9 +927,9 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-linkedin">
                         <div class="carousel-slides flex transition-transform duration-500 h-full">
-                            <img src="publications linkedin /POST LCAB.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
-                            <img src="publications linkedin /POST LCAB-2.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
-                            <img src="publications linkedin /MONTAUBAN.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
+                            <img src="publications-linkedin/post-lcab.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
+                            <img src="publications-linkedin/post-lcab-2.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
+                            <img src="publications-linkedin/MONTAUBAN.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 p-4">
                         </div>
                         <button onclick="moveCarousel('carousel-linkedin', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
                             <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
@@ -1140,7 +1140,7 @@
         const themeToggleIconDark = document.getElementById('theme-toggle-dark-icon');
 
         // Change the icons inside the button based on previous settings
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (localStorage.getItem('color-theme') === 'dark' || !('color-theme' in localStorage)) {
             themeToggleIconLight.classList.remove('hidden');
         } else {
             themeToggleIconDark.classList.remove('hidden');
