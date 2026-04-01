@@ -1271,8 +1271,6 @@
                 threshold: 0.2
             };
 
-         window.addEventListener('load', () => {
-            
             // Handle form submission via Vercel endpoint
             const contactForm = document.getElementById('contact-form');
             if (contactForm) {
@@ -1328,7 +1326,6 @@
                     }, 5000);
                 });
             }
-        });
 
             const glowObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
