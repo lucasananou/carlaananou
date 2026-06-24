@@ -653,11 +653,46 @@
                     </div>
                 </article>
 
+                <!-- INSTAGRAM TONTONS VIANDARDS -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
+                    <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-tontons-instagram">
+                        <div class="carousel-slides flex transition-transform duration-500 h-full">
+                            <img src="visuel instagram/Instagram les tontons viandards/2.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="visuel instagram/Instagram les tontons viandards/4.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                            <img src="visuel instagram/Instagram les tontons viandards/9.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950">
+                        </div>
+                        <button onclick="moveCarousel('carousel-tontons-instagram', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
+                        </button>
+                        <button onclick="moveCarousel('carousel-tontons-instagram', 1)" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-right-bold" width="20"></iconify-icon>
+                        </button>
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 carousel-dots"></div>
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 border border-fuchsia-400/30 rounded-full mb-4 inline-block">Instagram Carousel</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Les Tontons Viandards</h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">Charte éditoriale et visuels pour un restaurant de viandes de qualité.</p>
+                    </div>
+                </article>
+
+                <!-- INSTAGRAM LA CALZONE -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social">
+                    <div class="aspect-square overflow-hidden relative bg-zinc-50 dark:bg-zinc-950">
+                        <img src="visuel instagram/photo_client_la_calzone.jpg" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 border border-fuchsia-400/30 rounded-full mb-4 inline-block">Instagram Photo</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Photo Client - La Calzone</h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">Mise en avant de l'expérience client et valorisation des produits du restaurant.</p>
+                    </div>
+                </article>
+
                 <!-- VIDEO ELISA (Featured) -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="interview/interview-lcab/elisa.mp4" type="video/mp4">
+                            <source src="vidéos/interview-lcab/elisa.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -675,7 +710,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="interview/interview-lcab/imad.mp4" type="video/mp4">
+                            <source src="vidéos/interview-lcab/imad.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -693,7 +728,7 @@
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
                         <video controls class="max-w-full max-h-full object-contain opacity-90">
-                            <source src="interview/interview-lcab/jp.mp4" type="video/mp4">
+                            <source src="vidéos/interview-lcab/jp.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="p-8">
@@ -757,6 +792,42 @@
                             <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">OBJECTIF :</strong> Apporter de la visibilité à l’entreprise et faire comprendre la valeur de la solution.</p>
                             <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">RÉSULTAT :</strong> Génération de nouveaux prospects et développement du portefeuille clients.</p>
                             <p class="text-[10px] italic text-zinc-500 pt-2 border-t border-zinc-800">Vidéo réalisée dans le cadre de mon alternance chez Yoobi.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- VIDEO TONTONS VIANDARDS -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
+                    <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
+                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                            <source src="vidéos/présentation restaurant /presentation_restaurant.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-cyan-400 border border-cyan-400/30 rounded-full mb-4 inline-block">Vidéo Promotionnelle</span>
+                        <h3 class="text-xl font-bold text-white mb-4">Présentation - Les Tontons Viandards</h3>
+                        <div class="space-y-3">
+                            <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">OBJECTIF :</strong> Valoriser l'identité du restaurant, mettre en avant l'expérience culinaire et attirer une nouvelle clientèle.</p>
+                            <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">RÉSULTAT :</strong> Augmentation du taux de réservation et de l'engagement sur les réseaux sociaux.</p>
+                            <p class="text-[10px] italic text-zinc-500 pt-2 border-t border-zinc-800">Tournage et montage réalisés par mes soins.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- VIDEO VLOG CLIENT -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video">
+                    <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
+                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                            <source src="vidéos/vlog client/vlog_client.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-cyan-400 border border-cyan-400/30 rounded-full mb-4 inline-block">Vidéo Vlog</span>
+                        <h3 class="text-xl font-bold text-white mb-4">Vlog client - Une journée type</h3>
+                        <div class="space-y-3">
+                            <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">OBJECTIF :</strong> Créer un contenu immersif du point de vue client (UGC) pour humaniser la marque.</p>
+                            <p class="text-[11px] leading-relaxed text-zinc-400"><strong class="text-zinc-200">RÉSULTAT :</strong> Forte portée organique et identification de la communauté au concept.</p>
+                            <p class="text-[10px] italic text-zinc-500 pt-2 border-t border-zinc-800">Création de contenu, tournage mobile et montage dynamique.</p>
                         </div>
                     </div>
                 </article>
@@ -844,6 +915,27 @@
                     <div class="p-8">
                         <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Carte de Visite</span>
                         <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Carte de visite</h3>
+                    </div>
+                </article>
+
+                <!-- PRINT : BROCHURE TONTONS VIANDARDS -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="print">
+                    <div class="relative carousel-container group/carousel aspect-video overflow-hidden bg-zinc-50 dark:bg-zinc-950" id="carousel-brochure-tontons">
+                        <div class="carousel-slides flex transition-transform duration-500 h-full">
+                            <img src="print/Brochure les tontons viandards/1.png" class="shrink-0 w-full h-full object-contain p-4">
+                            <img src="print/Brochure les tontons viandards/2.png" class="shrink-0 w-full h-full object-contain p-4">
+                        </div>
+                        <button onclick="moveCarousel('carousel-brochure-tontons', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
+                        </button>
+                        <button onclick="moveCarousel('carousel-brochure-tontons', 1)" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-right-bold" width="20"></iconify-icon>
+                        </button>
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 carousel-dots"></div>
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50 border border-white/10 rounded-full mb-4 inline-block">Brochure</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Brochure - Les Tontons Viandards</h3>
                     </div>
                 </article>
 

@@ -1,0 +1,7 @@
+# System files
+.DS_Store
+
+# Heavy raw source media files (converted to mp4/jpg for the web)
+*.mov
+*.MOV
+*.HEIC
