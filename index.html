@@ -1384,7 +1384,7 @@
             }
         });
 
-        window.onload = () => {
+        document.addEventListener('DOMContentLoaded', () => {
             initCarousels();
             // Trigger the Selection (featured) filter by default
             const selectionBtn = document.querySelector('.filter-btn[onclick*="featured"]');
@@ -1548,7 +1548,7 @@
             document.querySelectorAll('.experience-card').forEach(card => {
                 glowObserver.observe(card);
             });
-        };
+        });
     </script>
     <!-- Lightbox Overlay -->
     <div class="lightbox-overlay" id="lightbox-overlay" onclick="closeLightbox(event)">
