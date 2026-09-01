@@ -642,6 +642,52 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
                 
+                <!-- INSTAGRAM OUVERTURE RESTAURANT (Featured) -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social" data-featured="true">
+                    <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-ouverture-restaurant">
+                        <div class="carousel-slides flex transition-transform duration-500 h-full">
+                            <img src="ouverture-restaurant/1.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 clickable-img cursor-zoom-in" onclick="openLightbox(['ouverture-restaurant/1.png','ouverture-restaurant/2.png'], 0)">
+                            <img src="ouverture-restaurant/2.png" class="shrink-0 w-full h-full object-contain bg-zinc-50 dark:bg-zinc-950 clickable-img cursor-zoom-in" onclick="openLightbox(['ouverture-restaurant/1.png','ouverture-restaurant/2.png'], 1)">
+                        </div>
+                        <button onclick="moveCarousel('carousel-ouverture-restaurant', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-left-bold" width="20"></iconify-icon>
+                        </button>
+                        <button onclick="moveCarousel('carousel-ouverture-restaurant', 1)" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-50 dark:bg-zinc-950/60 text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity">
+                            <iconify-icon icon="solar:arrow-right-bold" width="20"></iconify-icon>
+                        </button>
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 carousel-dots"></div>
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 border border-fuchsia-400/30 rounded-full mb-4 inline-block">Instagram Carrousel</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Ouverture Restaurant</h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">Carrousel Instagram pour l'annonce et le lancement d'ouverture d'un restaurant.</p>
+                    </div>
+                </article>
+
+                <!-- INSTAGRAM PUBLICATION OUVERTURE -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="social">
+                    <div class="aspect-square overflow-hidden relative bg-zinc-50 dark:bg-zinc-950">
+                        <img src="publication-ouverture/05.09 post 3.png" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 clickable-img cursor-zoom-in" onclick="openLightbox(['publication-ouverture/05.09 post 3.png'], 0)">
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 border border-fuchsia-400/30 rounded-full mb-4 inline-block">Publication Instagram</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Publication Ouverture</h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">Visuel de publication Instagram pour la communication d'ouverture.</p>
+                    </div>
+                </article>
+
+                <!-- INSTAGRAM CARTE RESTAURANT -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="social">
+                    <div class="aspect-square overflow-hidden relative bg-zinc-50 dark:bg-zinc-950">
+                        <img src="carte/5.png" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 clickable-img cursor-zoom-in" onclick="openLightbox(['carte/5.png'], 0)">
+                    </div>
+                    <div class="p-8">
+                        <span class="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 border border-fuchsia-400/30 rounded-full mb-4 inline-block">Carte & Menu</span>
+                        <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2">Carte du Restaurant</h3>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 font-light leading-relaxed">Visuel et design de carte de restaurant pour la communication sur réseaux sociaux.</p>
+                    </div>
+                </article>
+
                 <!-- INSTAGRAM LULOU 1 (Featured) -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="social" data-featured="true">
                     <div class="relative carousel-container group/carousel aspect-square overflow-hidden" id="carousel-lulou-1">
@@ -796,10 +842,10 @@
                     </div>
                 </article>
 
-                <!-- VIDEO ELISA (Featured) -->
-                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
+                <!-- VIDEO ELISA -->
+                <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/interview-lcab/elisa.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -817,7 +863,7 @@
                 <!-- VIDEO IMAD -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/interview-lcab/imad.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -835,7 +881,7 @@
                 <!-- VIDEO JP -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/interview-lcab/jp.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -853,7 +899,7 @@
                 <!-- VIDEO LA CALZONE -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/la-calzone/lacalzone.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -870,7 +916,7 @@
                 <!-- VIDEO PIZZA PREPARATION -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/la-calzone/pizza.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -887,7 +933,7 @@
                 <!-- VIDEO PIZZA 4 FROMAGES -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/la-calzone/pizza4fromages.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -904,7 +950,7 @@
                 <!-- VIDEO PIZZA DU MOIS -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/la-calzone/pizzadumois.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -918,10 +964,10 @@
                     </div>
                 </article>
 
-                <!-- VIDEO YOOBI 1 (Featured) -->
+                <!-- VIDEO YOOBI 1 -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos-yoobi/video_1.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -939,7 +985,7 @@
                 <!-- VIDEO YOOBI 2 -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos-yoobi/video_2.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -957,7 +1003,7 @@
                 <!-- VIDEO YOOBI 3 -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" style="display:none" data-category="video">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos-yoobi/video_3.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -975,7 +1021,7 @@
                 <!-- VIDEO TONTONS VIANDARDS -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/presentation-restaurant/presentation_restaurant.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -993,7 +1039,7 @@
                 <!-- VIDEO VLOG CLIENT -->
                 <article class="project-card group rounded-3xl overflow-hidden bg-white dark:bg-zinc-900/30 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all duration-300" data-category="video" data-featured="true">
                     <div class="aspect-[9/16] overflow-hidden relative bg-black max-h-[500px] mx-auto flex items-center justify-center">
-                        <video controls class="max-w-full max-h-full object-contain opacity-90">
+                        <video controls playsinline preload="metadata" class="max-w-full max-h-full object-contain opacity-90">
                             <source src="videos/vlog-client/vlog_client.mp4" type="video/mp4">
                         </video>
                     </div>
